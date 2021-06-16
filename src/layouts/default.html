@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Litepie Oxygen - {{ title }}</title>
+
+    <link rel="icon" type="image/png" href="img/favicon.png" />
+    <link rel="preconnect" href="https://rsms.me" />
+    <link href="https://rsms.me/inter/inter.css" rel="stylesheet" />
+
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="{{root}}/css/app.css" />
+  </head>
+
+  <body x-data="globalAlpine()" class="bg-gray-100 antialiased text-gray-500 font-normal">
+    {{#ifpage 'index'}}
+    <div class="absolute inset-x-0 top-0 h-48 sm:h-64 lg:h-96 bg-sky-500 rounded-b-lg xl:rounded-b-3xl"></div>
+    {{/ifpage}}
+
+    <div class="lg:flex">
+      <!-- Sidebar -->
+      {{> sidebar }}
+
+      <!-- Main -->
+      <div class="min-w-0 w-full flex-auto lg:static lg:max-h-full lg:overflow-visible">
+        <!-- Navbar -->
+        {{> navbar }}
+
+        <!-- Body -->
+        {{> body}}
+      </div>
+    </div>
+
+    <!-- Script JS -->
+    <script src="{{root}}/js/app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,33 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-feature-settings: 'frac', 'cv02', 'cv03', 'cv04', 'cv11';
+    -moz-font-feature-settings: 'frac', 'cv02', 'cv03', 'cv04', 'cv11';
+    -o-font-feature-settings: 'frac', 'cv02', 'cv03', 'cv04', 'cv11';
+
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+  ::-webkit-scrollbar {
+    @apply hidden;
+  }
+}
+
+@layer components {
+}
+
+@layer utilities {
+  @variants hover {
+  }
+}
+
+@screen lg {
+  .sticky\?lg\:h-\(screen-16\) {
+    height: calc(100vh - theme('spacing.16'));
+  }
+}

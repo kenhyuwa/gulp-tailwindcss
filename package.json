@@ -1,0 +1,60 @@
+{
+  "name": "gulp-tailwindcss",
+  "version": "0.1.0",
+  "description": "Starter Gulp with Tailwind CSS",
+  "main": "gulpfile.js",
+  "scripts": {
+    "dev": "gulp",
+    "build": "NODE_ENV=production gulp build",
+    "start": "NODE_ENV=production gulp start",
+    "lint": "eslint --fix --ignore-path .gitignore .",
+    "prepare": "husky install",
+    "test": "eslint"
+  },
+  "dependencies": {
+    "alpinejs": "^2.8.2",
+    "apexcharts": "^3.27.1",
+    "feather-icons": "^4.28.0",
+    "focus-visible": "^5.2.0",
+    "node-sass": "^5.0.0",
+    "postcss": "^8.2.9",
+    "swiper": "^6.7.0",
+    "tailwindcss": "^2.2.0-canary.13"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.14.3",
+    "@babel/preset-env": "^7.14.4",
+    "@commitlint/cli": "^12.1.4",
+    "@commitlint/config-conventional": "^12.1.4",
+    "autoprefixer": "^10.2.5",
+    "babelify": "^10.0.0",
+    "browser-sync": "^2.26.14",
+    "browserify": "^17.0.0",
+    "del": "^6.0.0",
+    "eslint": "^7.28.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-eslint": "^6.0.0",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-postcss": "^9.0.0",
+    "gulp-purgecss": "^3.1.3",
+    "gulp-sass": "^4.1.0",
+    "gulp-terser": "^2.0.1",
+    "husky": "^6.0.0",
+    "lint-staged": "^11.0.0",
+    "log-symbols": "^4.1.0",
+    "panini": "^1.7.1",
+    "prettier": "^2.3.1",
+    "prettier-eslint": "^12.0.0",
+    "vinyl-source-stream": "^2.0.0"
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint --fix",
+      "prettier --write"
+    ]
+  }
+}

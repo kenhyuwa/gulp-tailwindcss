@@ -1,0 +1,26 @@
+[
+  {
+    "name": "member",
+    "count": "13.4k",
+    "icon": "<i data-feather=\"users\"></i>\n",
+    "class": "bg-sky-200/50 text-sky-600"
+  },
+  {
+    "name": "profits",
+    "count": "38.9k",
+    "icon": "<i data-feather=\"activity\"></i>\n",
+    "class": "bg-sky-200/50 text-sky-600"
+  },
+  {
+    "name": "pending",
+    "count": "8",
+    "icon": "<i data-feather=\"tag\"></i>\n",
+    "class": "bg-sky-200/50 text-sky-600"
+  },
+  {
+    "name": "ordered",
+    "count": "10",
+    "icon": "<i data-feather=\"package\"></i>\n",
+    "class": "bg-sky-200/50 text-sky-600"
+  }
+]
